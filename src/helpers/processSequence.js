@@ -57,6 +57,7 @@ const processSequence = ({ value, writeLog, handleSuccess, handleError }) => {
     squareNumber,
     tap(writeLog),
     getId,
+    tap(writeLog),
     fetchAnimal,
     andThen(processAnimalResult),
     otherwise(handleAnimalErr)
