@@ -29,7 +29,7 @@ import {
 const api = new Api();
 
 const processSequence = ({ value, writeLog, handleSuccess, handleError }) => {
-  const isLengthBetween2And10 = test(/^.{3,10}$/);
+  const isLengthBetween2And10 = test(/^.{3,9}$/);
   const isNumber = test(/^\d*\.?\d*$/);
   const isValidValue = allPass([isLengthBetween2And10, isNumber]);
   const makeConvertingQuery = (number) => ({ from: 10, to: 2, number });
